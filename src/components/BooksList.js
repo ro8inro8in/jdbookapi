@@ -19,7 +19,7 @@ const BooksList = () => {
     <div className="books-list">
       {books.map((book) => {
         return (
-          <div>
+          <div className="book">
             <div>
               <h2>Title: {book.volumeInfo.title}</h2>
             </div>
@@ -34,7 +34,7 @@ const BooksList = () => {
             </div>
             <div>
               <img src={book.volumeInfo.imageLinks.thumbnail} alt="#" />
-            </div>
+            </div>          
           </div>
         );
       })}
