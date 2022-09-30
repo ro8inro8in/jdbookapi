@@ -4,9 +4,9 @@ import '../App';
 function Navbar() {
   return (
     <div className='navbar'>
-        <div>
+        {/* <div>
            <h1>The Book Store</h1> 
-        </div>
+        </div> */}
         <div>Home</div>
         <div>Books</div>
         <div>Magazines</div>

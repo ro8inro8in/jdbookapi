@@ -8,18 +8,21 @@ import Magazines from "./components/Magazines";
 import EBooks from "./components/EBooks";
 import Account from "./components/Account";
 import Footer from "./components/Footer";
+import TheBookS from "./components/TheBookS";
+
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">  
+   <TheBookS />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Books" element={<Books />} />
+      <Routes> 
+        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Books />} />
         <Route path="/Magazines" element={<Magazines />} />
         <Route path="/EBooks" element={<EBooks />} />
         <Route path="/Account" element={<Account />} />
-      </Routes>
+      </Routes> 
       <Footer /> 
     </div>
   );
