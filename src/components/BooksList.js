@@ -2,11 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../App";
 import axios from "axios";
 
-// const MaxWords = 140;
-// render() {
-//   const { text } = this.props;
-// }
-
 const BooksList = () => {
   const [books, setBooks] = useState([]);
   const [selectedBooks, setSelectedBooks] = useState(false);
@@ -25,13 +20,11 @@ const BooksList = () => {
   //ternary operator to say if value is a truthy value 
   // condition - express if True express if false 
   const handleClick = () => {
-    // selectedBooks ? setSelectedBooks(false): setSelectedBooks(true);
     setSelectedBooks(current => !current);
     console.log("You clicked the book")
   }
 
   //Trying useEffect hook to toggle between on and off. book added and book removed 
-
 
   return (
     <div className="books-list">
@@ -61,8 +54,8 @@ const BooksList = () => {
               <div>
                 <h4>Pages: {book.volumeInfo.pageCount}</h4>
               </div>
-              <div>
-                <p>Pages: {book.volumeInfo.description}</p>
+              <div className ="long-text">
+              <p>Description: ({book.volumeInfo.description.split(". " || "! ")[0]})...</p>
               </div>
               </div>
               </div>

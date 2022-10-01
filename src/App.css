@@ -5,9 +5,9 @@
   font-family: Comic Sans MS;
 }
 
-.theBookStore{
+.header{
   width:100;
-  height: 2vh;
+  height: 5vh;
   /* background: rgb(19, 123, 45); */
   color: rgb(0, 0, 0);
   display: flex;
@@ -28,9 +28,9 @@
 
 .footer{
   width:100%;
-  height: 10vh;
-  background: black;
-  color: white;
+  height: 5vh;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,8 +87,6 @@ img{
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px 9px 9px  rgb(196, 196, 196);
-  
-
 }
 .book:hover {background-color: #ffffffde}
 
@@ -97,3 +95,4 @@ img{
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+

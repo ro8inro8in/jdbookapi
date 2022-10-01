@@ -1,9 +1,9 @@
 import React from "react";
 import "../App";
 
-function TheBookS() {
+function Header() {
   return (
-    <div className="theBookStore">
+    <div className="header">
       <div>
         <h1>The Book Store</h1>
       </div>
@@ -11,4 +11,4 @@ function TheBookS() {
   );
 }
 
-export default TheBookS;
+export default Header;

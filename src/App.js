@@ -8,13 +8,13 @@ import Magazines from "./components/Magazines";
 import EBooks from "./components/EBooks";
 import Account from "./components/Account";
 import Footer from "./components/Footer";
-import TheBookS from "./components/TheBookS";
+import Header from "./components/Header";
 
 
 function App() {
   return (
     <div className="App">  
-   <TheBookS />
+   <Header />
       <Navbar />
       <Routes> 
         <Route path="/Home" element={<Home />} />
