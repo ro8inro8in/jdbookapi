@@ -9,7 +9,7 @@ import axios from "axios";
 
 const BooksList = () => {
   const [books, setBooks] = useState([]);
-  const [selectedBooks, setSelectedBooks] = useState(true);
+  const [selectedBooks, setSelectedBooks] = useState(false);
 
 
   useEffect(() => {
@@ -24,8 +24,9 @@ const BooksList = () => {
 
   //ternary operator to say if value is a truthy value 
   // condition - express if True express if false 
-  const isSelected = () => {
-    selectedBooks ? setSelectedBooks(false): setSelectedBooks(true);
+  const handleClick = () => {
+    // selectedBooks ? setSelectedBooks(false): setSelectedBooks(true);
+    setSelectedBooks(current => !current);
     console.log("You clicked the book")
   }
 
@@ -36,13 +37,19 @@ const BooksList = () => {
     <div className="books-list">
       {books.map((book) => {
         return (
-        
+          <div
+          style={{
+            backgroundColor: selectedBooks ? 'salmon' : '',
+            color: selectedBooks ? 'white' : '',
+          }}
+          onClick={handleClick}
+        >          
           <div className="book">
           
             
-            <div className ="isSelected">
+            {/* <div className ="isSelected"> */}
             {/* <div onClick={() => setSelectedBooks(!selectedBooks)}> */}
-            <div onClick = {isSelected}>
+           
            <div>
               <div className ="textRight">
                 <div>
@@ -70,7 +77,7 @@ const BooksList = () => {
            
           </div>
          
-          </div>
+          // </div>
          
         );
       })}
