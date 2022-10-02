@@ -9,6 +9,7 @@ import EBooks from "./components/EBooks";
 import Account from "./components/Account";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Lorem from "./components/Lorem";
 
 //Added the store to sessionStorage in the parent component, Originally I had this in the BooksIsSelected child component but
 //This did not work, my thought were that it would keep refreshing the object and setting it back every time the component renders
@@ -33,6 +34,7 @@ function App() {
      
    <Header />
       <Navbar />
+      <Lorem />
       <Routes> 
         <Route path="/Home" element={<Home />} />
         <Route path="/" element={<Books count={count} setCount={setCount} />} />

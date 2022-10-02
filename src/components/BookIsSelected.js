@@ -25,7 +25,9 @@ const BookIsSelected = (props) => {
     console.log("You clicked the book");
   };
 //function that is true or false if clicked state is true and state is updated 
-  return (
+
+return (
+  
     <div
       className="book"
       style={{
@@ -36,6 +38,7 @@ const BookIsSelected = (props) => {
       onClick={handleClick}
       
     >
+  
       <div>
         <div className="textRight">
           <div>
@@ -56,10 +59,12 @@ const BookIsSelected = (props) => {
           </div>
         </div>
       </div>
+
       <div className="bookLeft">
         <img src={book.volumeInfo.imageLinks.thumbnail} alt="#" />
       </div>
     </div>
+    
   );
 };
 

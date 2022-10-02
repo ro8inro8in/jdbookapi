@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  padding: 5px;
+  /* padding: 5px; */
   margin: 0;
   font-family: Comic Sans MS;
 }
@@ -13,6 +13,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 40px;
+  padding-bottom:20px;
 }
 
 .navbar {
@@ -24,10 +26,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
+}
+.lorem{
+ width: 100%;
+  text-align: center;
+  padding-top: 20px;
+
+  padding-left: 350px;
+  padding-right: 350px;
 }
 
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 5vh;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -43,16 +54,19 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-left: 200px;
+  padding-right: 200px;
   /* justify-items: center; */
   /* text-align: center;
   align-items: flex-start; */
 }
-@media screen and (max-width: 600px) {
-}
+/* @media screen and (max-width: 600px) {
+  grid-template-columns repeat(2, 1fr)
+} */
 
 img {
 
- 
+ padding: 30px;
   
 }
 
@@ -92,55 +106,61 @@ img {
   padding-bottom: 20vh;
 }  */
 .textRight{
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
   height: fit-content;
   display: inline-block;
   margin-bottom: 1rem;
+  padding: 20px;
   
 } 
 
 .Books {
   cursor: pointer;
   border: solid;
-  /* padding: 10px; */
+  padding-top: 10px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 10px;
   box-shadow: 0 8px 6px -6px black;
 }
 
 .Home {
   cursor: pointer;
   border: solid;
-  /* padding: 10px; */
+  padding-top: 10px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 10px;
   box-shadow: 0 8px 6px -6px black;
 }
 
 .Mags {
   cursor: pointer;
   border: solid;
-  /* padding: 10px; */
+  padding-top: 10px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 10px;
   box-shadow: 0 8px 6px -6px black;
 }
 
 .E {
   cursor: pointer;
   border: solid;
-  /* padding: 10px; */
+  padding-top: 10px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 10px;
   box-shadow: 0 8px 6px -6px black;
 }
 
 .Account {
   cursor: pointer;
   border: solid;
-  /* padding: 10px; */
+  padding-top: 10px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 10px;
   box-shadow: 0 8px 6px -6px black;
 }
