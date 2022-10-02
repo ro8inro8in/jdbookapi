@@ -10,7 +10,11 @@ import Account from "./components/Account";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-
+//Added the store to sessionStorage in the parent component, Originally I had this in the BooksIsSelected child component but
+//This did not work, my thought were that it would keep refreshing the object and setting it back every time the component renders
+//By passing this in at the Parent level I manged to avoid this and store the state to sessionStorage this let me save and reload the page and kept my
+//click information by passing in to used state if JSON.parse... if nothing is stored just pass an integer of 1, Ideally I would like to pass this to the book object in
+// BooksIsSelected 
 
 function App() {
   
@@ -19,11 +23,11 @@ function App() {
 
      setCount(JSON.parse(window.sessionStorage.getItem("count")));
   }, []);
-
+//gets the key value pair after it has been set 
   useEffect(() => {
     window.sessionStorage.setItem("count", count);
   }, [count]);
-  
+  //sets a key value pair 
   return (
     <div className="App"> 
      

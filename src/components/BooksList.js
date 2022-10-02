@@ -27,21 +27,21 @@ const BooksList = (props) => {
     </div>
   );
 };
-
+// passed down to BooksIsSelected child component as a prop so we can manage the data with the on click 
 export default BooksList;
 
 //Decided to use Axios to "get" my data from the API
 //console log (res.data) will show me the results from the data when I run it in dev tools
 
 //I kept running in to .map is not a function in my browser,
-//I had a look at the data and object starts with Items so I decided to add it to line 14
+//I had a look at the data and object starts with Items so I decided to add it to line 15
 // from there I could drill down results and then show data and access Items
-// In my return (line27) I can now drill down to each key value pair that follow the items array
+// In my return (line20) I can now drill down to each key value pair that follow the items array
 
 //classNames for calling in css
 //I have split value into a div for more granular control with css later I could add lots of class names but
 // it will make my code very messy
 
-// (Line 27)This is the return form the Axios get request that pulls the data back to show it in my browser
+// (Line 20)This is the return form the Axios get request that pulls the data back to show it in my browser
 
 //
