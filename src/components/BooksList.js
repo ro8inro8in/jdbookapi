@@ -1,48 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../App";
 import axios from "axios";
-
-const Book = (props) => {
-  const [isSelected, setIsSelected] = useState(false);
-  const { book } = props;
-  const handleClick = () => {
-    setIsSelected((current) => !current);
-    console.log("You clicked the book");
-  };
-  return (
-    <div
-      className="book"
-      style={{
-        backgroundColor: isSelected ? "salmon" : "",
-        color: isSelected ? "white" : "",
-      }}
-      onClick={handleClick}
-    >
-      <div>
-        <div className="textRight">
-          <div>
-            <h2>Title: {book.volumeInfo.title}</h2>
-          </div>
-          <div>
-            <h3>Author: {book.volumeInfo.authors}</h3>
-          </div>
-          <div>
-            <h4>Pages: {book.volumeInfo.pageCount}</h4>
-          </div>
-          <div className="long-text">
-            <p>
-              Description: ({book.volumeInfo.description.split(". " || "! ")[0]}
-              )...
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="bookLeft">
-        <img src={book.volumeInfo.imageLinks.thumbnail} alt="#" />
-      </div>
-    </div>
-  );
-};
+import BookIsSelected from "./BookIsSelected";
 
 const BooksList = () => {
   const [books, setBooks] = useState([]);
@@ -57,15 +16,12 @@ const BooksList = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  //ternary operator to say if value is a truthy value
-  // condition - express if True express if false
-
-  //Trying useEffect hook to toggle between on and off. book added and book removed
-
   return (
+    
     <div className="books-list">
+       
       {books.map((book) => {
-        return <Book book={book} />;
+        return <BookIsSelected book={book} />;
       })}
     </div>
   );

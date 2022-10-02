@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 5px;
   margin: 0;
   font-family: Comic Sans MS;
 }
@@ -27,7 +27,7 @@
 }
 
 .footer{
-  width:100%;
+  width:100vw;
   height: 5vh;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -76,7 +76,7 @@ img{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.1s;
   border-radius: 5px;  
-  /* margin: 30px; */
+  margin: 30px;
   padding: 5px;
   font-size: 24px;
   text-align: center;
@@ -90,9 +90,12 @@ img{
 }
 .book:hover {background-color: #ffffffde}
 
-.book:active {
+/* .book:active {
   background-color: #ffffffbd;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
+ */
+ .bookLeft{
+  padding-bottom: 20vh;
+ }
