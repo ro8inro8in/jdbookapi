@@ -23,7 +23,10 @@
   color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+ 
+  
+  
 }
 
 .footer{
@@ -66,10 +69,8 @@ img{
 
 .book{
   cursor: pointer;
-  
   text-align: center;
   display: flex;
-  
   height: 90%;
   flex-wrap: wrap;
   justify-content: center; 
@@ -98,4 +99,45 @@ img{
  */
  .bookLeft{
   padding-bottom: 20vh;
+ }
+
+ .Books{
+  border: solid;
+  /* padding: 10px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 8px 6px -6px black;
+  
+ }
+
+ .Home{
+  border: solid;
+  /* padding: 10px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 8px 6px -6px black;
+ }
+
+ .Mags{
+  border: solid;
+  /* padding: 10px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 8px 6px -6px black;
+ }
+
+ .E{
+  border: solid;
+  /* padding: 10px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 8px 6px -6px black;
+ }
+
+ .Account{
+  border: solid;
+  /* padding: 10px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 8px 6px -6px black;
  }

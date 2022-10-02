@@ -3,8 +3,9 @@ import "../App";
 import axios from "axios";
 import BookIsSelected from "./BookIsSelected";
 
-const BooksList = () => {
+const BooksList = (props) => {
   const [books, setBooks] = useState([]);
+  
 
   useEffect(() => {
     axios
@@ -21,7 +22,7 @@ const BooksList = () => {
     <div className="books-list">
        
       {books.map((book) => {
-        return <BookIsSelected book={book} />;
+        return <BookIsSelected book={book} setCount={props.setCount} count={props.count}/>;
       })}
     </div>
   );
